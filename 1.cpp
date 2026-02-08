@@ -2,9 +2,13 @@
 #include <cstdio>
 using namespace std;
 
-/*
-Add `int max_of_four(int a, int b, int c, int d)` here.
-*/
+int max_of_four(int a, int b, int c, int d) {
+    int mx = a;
+    if (b > mx) mx = b;
+    if (c > mx) mx = c;
+    if (d > mx) mx = d;
+    return mx;
+}
 
 int main() {
     int a, b, c, d;
